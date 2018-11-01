@@ -49,5 +49,19 @@ namespace HomeAPI.Controllers
 
             return CreatedAtRoute("GetHome", new { id = home.Id }, home);
         }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            var home = _context.Homes.Find(id);
+            if (home == null)
+            {
+                return NotFound();
+            }
+
+            _context.Homes.Remove(home);
+            _context.SaveChanges();
+            return NoContent();
+        }
     }
 }
