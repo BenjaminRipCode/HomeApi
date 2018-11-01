@@ -2,9 +2,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using HomeAPI.Models;
+using Home.Api.Models;
 
-namespace HomeAPI
+namespace Home.Api
 {
     public class Startup
     {

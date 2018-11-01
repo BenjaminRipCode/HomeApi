@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using HomeAPI.Models;
+using Home.Api.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace HomeAPI.Controllers
+namespace Home.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace HomeAPI.Models
+namespace Home.Api.Models
 {
     public class HomeContext : DbContext
     {
